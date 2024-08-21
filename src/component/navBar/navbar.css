@@ -1,0 +1,137 @@
+:root {
+  --bg-color: #000
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4rem 12% 4rem;
+  /* background-color: var(--body-color); */
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.logo {
+  font-size: 3rem;
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.logo span {
+  text-shadow: 0 0 25px var(--main-color);
+}
+
+.navbar a {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+.icons {
+  font-size: 2rem;
+}
+
+.dark-light {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-size: 1.125rem;
+  padding: 2.1rem;
+  border-radius: 0.5rem;
+}
+
+.dark-light i {
+  position: absolute;
+  color: var(--color01);
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+
+.dark-light i.sun {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dark-light.active i.sun {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dark-light.active i.moon {
+  opacity: 0;
+  pointer-events: none;
+}
+#menu-icons {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--body-color);
+  width: 0px;
+}
+
+
+@media (max-width: 895px) {
+  #menu-icons {
+    display: flex;
+    font-size: 2rem;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 50%;
+    padding: 1rem 3%;
+    background: var(--body-color);
+    backdrop-filter: blur(15px);
+    border-bottom-right-radius: 2rem;
+    border-right: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    display: none;
+  }
+  
+  .navbar .active {
+    display: block;
+  }
+  .activeResponsive {
+    display: block;
+  }
+  
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: var(--text-color);
+  }
+}

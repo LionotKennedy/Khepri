@@ -1,0 +1,128 @@
+.accueil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+  }
+
+  #contact-icon {
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  .accueil-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  
+  .accueil-content h3 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+  }
+  
+  .accueil-content h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    line-height: 1;
+  }
+
+  .accueil-img img {
+    position: relative;
+    top: 3rem;
+    width: 32vw;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+  }
+  
+  .accueil-content p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+  }
+  
+  .btns-group {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 2rem;
+  }
+  
+  .btns {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: black;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .btns:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--main-color);
+  }
+  
+  .btns-group a:nth-last-of-type(1) {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0 25px transparent;
+  }
+  
+  .btns-group a:nth-last-of-type(1):hover {
+    background-color: var(--main-color);
+    color: black;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 895px) {
+    .accueil {
+      flex-direction: column-reverse;
+      margin: 5rem 4rem;
+    }
+
+    #contact-icon {
+      font-size: 1rem;
+    }
+  
+    .accueil-content h3 {
+      font-size: 2.6rem;
+    }
+  
+    .accueil-content h1 {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+  
+    .accueil-content p {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  
+    .accueil-img img {
+      width: 56vw;
+    }
+    .btns-group {
+      flex-direction: column;
+    }
+    .btns {
+      width: 56vw;
+      text-align: center;
+    }
+  }
+  

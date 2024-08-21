@@ -1,0 +1,111 @@
+.min__texte {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .apropos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+  }
+  
+  .apropos-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  
+  .apropos-content h3 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+  }
+  
+  .apropos-content h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    line-height: 1;
+  }
+  
+  .apropos-img img {
+    position: relative;
+    top: 3rem;
+    width: 32vw;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+  }
+  
+  .apropos-content p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+  }
+  
+  .btns-group__apropos {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 2rem;
+  }
+  
+  .btns__apropos {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: black;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .btns__apropos:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--main-color);
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 895px) {
+    .apropos {
+      flex-direction: column-reverse;
+      margin: 5rem 4rem;
+    }
+  
+    .apropos-content h3 {
+      font-size: 2.6rem;
+    }
+  
+    .apropos-content h1 {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+  
+    .apropos-content p {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  
+    .apropos-img img {
+      width: 56vw;
+    }
+    .btns-group__apropos {
+      flex-direction: column;
+    }
+    .btns__apropos {
+      width: 56vw;
+      text-align: center;
+    }
+  }
+  

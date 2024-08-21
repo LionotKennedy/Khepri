@@ -1,0 +1,126 @@
+.service {
+    background: var(--main-color);
+    margin-bottom: 5rem;
+  }
+  
+  .service-box {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .heading {
+    margin-bottom: 5rem;
+    font-size: 2.3rem;
+    font-weight: 500;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  
+  .service-item {
+    min-height: 250px;
+    max-width: 450px;
+    border: 1px solid var(--round-color);
+    border-radius: 1rem;
+    margin: 0 0rem;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    color: var(--text-color);
+    transition: 0.4s ease-in-out;
+  }
+  
+  .bath {
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  
+  #menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+  }
+  
+  .service__round {
+    font-size: 2rem;
+    /* border: 2px solid var(--main-color); */
+    width: 5.5rem;
+    height: 5.5rem;
+    text-align: center;
+    color: var(--text2-color);
+    background-color: var(--round-color);
+    border-radius: 50%;
+    padding-top: 1.5rem;
+  }
+  
+  .service-item h5 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+  }
+  
+  .see__more {
+    padding: 1rem 1.8rem;
+    background-color: var(--round-color);
+    /* box-shadow: 0 0 25px var(--main-color); */
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: var(--text2-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    width: 10vw;
+  }
+  
+  @media (max-width: 991px) {
+    .service-box .wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .see__more {
+      width: 20vw;
+    }
+    .heading {
+      font-size: 2rem;
+    }
+    .bath {
+      font-size: 2.2rem;
+      font-weight: 800;
+    }
+  }
+  
+  @media (max-width: 895px) {
+    .bath {
+      font-size: 2.1rem;
+      font-weight: 720;
+    }
+  }
+  
+  @media (max-width: 695px) {
+    .service-box .wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .see__more {
+      width: 20vw;
+    }
+    .bath {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+  
